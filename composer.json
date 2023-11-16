@@ -1,0 +1,54 @@
+{
+    "name": "thehocinesaad/stability-php",
+    "description": "Stability PHP is a comprehensive PHP API client designed for seamless interaction with the Stability AI API.",
+    "keywords": [
+        "stability-php",
+        "ai",
+        "stability",
+        "php",
+        "client",
+        "stable diffusion"
+    ],
+    "homepage": "https://github.com/thehocinesaad/stability-php",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Hocine Saad",
+            "email": "saadhocine0@gmail.com",
+            "role": "Creator"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^9.0",
+        "symfony/var-dumper": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Stability\\": "src/"
+        },
+        "files": [
+            "src/Stability.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TheHocineSaad\\StabilityPhp\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
